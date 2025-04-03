@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Bungee+Outline&family=M+PLUS+Rounded+1c&family=Rye&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Bungee+Outline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c&family=Rye&display=swap');
+
+@font-face {
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=M+PLUS+Rounded+1c&family=Rye&display=swap') format('opentype');
+    font-weight: normal;
+    font-family: "Boldonse", "Inter", sans-serif;
+    font-style: normal;
+}
+
+* h1, h2, h3{
+    font-family: var(--font-destaque);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    text-indent: 10px;
+    font-weight: 100;
+    font-size: large;
+    text-align: left;
+    color: #F2441D;
+}
+
+:root{
+    --cor0: #7A38A6;
+    --cor1: hsla(277, 100%, 84%, 0.603);
+    --cor2: #F2441D;
+    --cor3: hsla(11, 100%, 88%, 0.404);
+    --cor4: hsl(239, 100%, 76%);
+    --cor5: hsla(11, 89%, 53%, 0.61);
+
+    --font-destaque: 'Boldonse', sans-serif;
+    --font-padrao: 'Inter', sans-serif;
+}
+
+body{    
+    margin: 0px;
+}
+
+hr{
+    margin: 70px 0px 0px;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+}
+
+nav{
+    position: 54;
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+
+header h1{
+    margin: 0px 0px 0px 10px;
+    font-family: var(--font-destaque);
+}
+
+header nav > a{
+    font-family: var(--font-destaque);
+    font-size: smaller;
+    text-decoration: none;
+    color: var(--cor2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404);  
+    padding: 0px 5px 0px 5px;
+}
+
+header nav > a:hover{
+    background-color: var(--cor5);
+    transition-duration: 0.4s;
+    color: var(--cor0);
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+main{
+    padding: 20px;
+    margin: 20px;
+    width: auto;    
+}
+
+main p {
+    font-family: var(--font-padrao);
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+main img{
+    width: 100%;
+}
+
+main ul{
+    font-family: var(--font-padrao);
+    text-align: left;
+}
