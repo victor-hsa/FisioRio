@@ -49,8 +49,8 @@ header {
 }
 
 nav{
-    position: 54;
-    display: inline-flex;
+    border: 2px solid purple;
+    display: inline-block;
     margin-bottom: 5px;
 }
 
