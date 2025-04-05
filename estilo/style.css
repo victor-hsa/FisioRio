@@ -12,13 +12,15 @@
 }
 
 * h1, h2, h3{
+    height: 16vh;
+    margin: 0px;
     font-family: var(--font-destaque);
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     text-indent: 10px;
     font-weight: 100;
     font-size: large;
     text-align: left;
-    color: #F2441D;
+    color: var(--cor1);
 }
 
 :root{
@@ -37,21 +39,22 @@ body{
     margin: 0px;
 }
 
-hr{
-    margin: 70px 0px 0px;
-}
-
-
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: lightgray;
     width: 100%;
-    position: fixed;
+    position: relative;
+    height: 15vh;
+    border: 2px solid orange;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;    
 }
 
 nav{
-    border: 2px solid purple;
     display: inline-block;
     margin-bottom: 5px;
+    
+
 }
 
 header h1{
@@ -64,7 +67,7 @@ header nav > a{
     font-size: smaller;
     text-decoration: none;
     color: var(--cor2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404);  
+    text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     padding: 0px 5px 0px 5px;
 }
 
@@ -74,13 +77,22 @@ header nav > a:hover{
     color: var(--cor0);
     border-radius: 5px;
     padding: 0px 5px 0px 5px;
+    border: 1px solid var(--cor0);
 }
 
 main{
-    padding: 20px;
+    padding: 0px;
     width: auto;    
 }
 
+div.imagem{
+    background-image: url('../fisioterapia/fisioterapia.jpg');
+    height: 95vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+
+}
 main p {
     font-family: var(--font-padrao);
     text-align: left;
