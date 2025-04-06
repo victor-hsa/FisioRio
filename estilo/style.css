@@ -37,6 +37,9 @@
 
 body{    
     margin: 0px;
+    background-image: url(../fisiorio.png);
+    background-size: 100px;
+    
 }
 
 header {
