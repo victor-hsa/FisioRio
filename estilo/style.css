@@ -44,7 +44,6 @@ body{
 header {
     background-color: lightgray;
     width: 100%;
-    position: relative;
     height: 15vh;
     border: 2px solid orange;
     border-top-width: 0px;
@@ -54,9 +53,7 @@ header {
 
 nav{
     display: inline-block;
-    margin-bottom: 5px;
-    
-
+    margin-bottom: 5px;   
 }
 
 header h1{
@@ -71,7 +68,6 @@ header nav > a{
     color: var(--cor2);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     padding: 0px 5px 0px 5px;
-    width: auto;
 }
 
 header nav > a:hover{
@@ -85,19 +81,18 @@ header nav > a:hover{
 
 main{
     padding: 10px;
-    width: 100%;   
-    
+    width: 100%;  
 }
 
 div.imagem{
-    height: 95vh;
+    height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     border: 2px solid black;
     background-image: url('../fisioterapia/fisioterapia2.jpg'); 
     background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
+    background-size: 100% 100%;
+    width: 100%;
 
 }
 main p {
