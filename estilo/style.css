@@ -12,7 +12,7 @@
 }
 
 * h1, h2, h3{
-    height: 16vh;
+    height: 7vh;
     margin: 0px;
     font-family: var(--font-destaque);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
@@ -37,7 +37,6 @@
 
 body{    
     margin: 0px;
-    background-image: url(../fisiorio.png);
     background-size: 100px;
     
 }
@@ -72,6 +71,7 @@ header nav > a{
     color: var(--cor2);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     padding: 0px 5px 0px 5px;
+    width: auto;
 }
 
 header nav > a:hover{
@@ -84,16 +84,20 @@ header nav > a:hover{
 }
 
 main{
-    padding: 0px;
-    width: auto;    
+    padding: 10px;
+    width: 100%;   
+    
 }
 
 div.imagem{
-    background-image: url('../fisioterapia/fisioterapia.jpg');
     height: 95vh;
     background-position: center center;
     background-repeat: no-repeat;
     border: 2px solid black;
+    background-image: url('../fisioterapia/fisioterapia2.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
 
 }
 main p {
