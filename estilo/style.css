@@ -36,21 +36,26 @@
 }
 
 body{    
-    padding: 10px;
-    margin: 0px;
-    background-size: 100px;    
+    padding-bottom: 10px;
+    margin: 0px;  
 }
 
 header {
-    background-color: lightgray;
     max-width: 100%;
-    height: 15vh;
+    height: 20vh;
     border: 3px solid orange;
     border-top-width: 0px;
     border-right-width: 0px;
-    border-left-width: 0px;    
+    border-left-width: 0px;
 }
+ div{
+    background: transparent url(../fisiorio-sf200.png) center center no-repeat scroll;
+    background-size: 40%;
+    height: 20vh;
 
+    position: fixed;
+    left: -100px;
+ }
 nav{
     display: inline-block;
     margin-bottom: 5px;   
@@ -61,16 +66,20 @@ header h1{
     font-family: var(--font-destaque);
 }
 
-header nav > a{
+div nav a{
     font-family: var(--font-destaque);
     font-size: smaller;
     text-decoration: none;
     color: var(--cor2);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     padding: 0px 5px 0px 5px;
+    position: relative;
+
+    left: 50%;
+        
 }
 
-header nav > a:hover{
+div nav a:hover{
     background-color: var(--cor5);
     transition-duration: 0.4s;
     color: var(--cor0);
@@ -80,30 +89,32 @@ header nav > a:hover{
 }
 
 main{
-    width: auto;  
+    margin-top: 10px;
+    max-width: 1000px ;
+    max-height: 100vh;
+}
+main article{
+    border: 3px solid --cor2;
+    background: var(--cor4) url(../fisioterapia/fisioterapia.jpg) center center no-repeat scroll;
+    background-size: 500px 250px;
 }
 
-div.imagem{
-    padding: 10px;
-    height: 50vh;
-    background: var(--cor5) url(../fisioterapia/fisioterapia.jpg) center center no-repeat scroll;
-    border: 2px solid black;
-    max-width: auto;
-    border-image: 5px;
-}
-main p {
+main p{
     font-family: var(--font-padrao);
     text-align: left;
-    padding-left: 20px;
-    font-weight: bold;
+    text-indent: 20px;
+    font-weight: normal;
     line-height: 1.5em;
-}
-
-main img{
-    padding: 10px;
 }
 
 main ul{
     font-family: var(--font-padrao);
     text-align: left;
+}
+
+footer{
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: medium;
+    max-height: 30vh;
 }
