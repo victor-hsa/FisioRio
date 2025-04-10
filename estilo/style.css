@@ -32,26 +32,29 @@
     --cor0: #7A38A6;
     --cor1: hsla(277, 100%, 84%, 0.603);
     --cor2: #F2441D;
-    --cor3: hsla(11, 100%, 88%, 0.404);
+    --cor3: hsla(11, 95%, 62%, 0.712);
     --cor4: hsl(239, 100%, 76%);
-    --cor5: hsla(11, 89%, 53%, 0.61);
+    --cor5: hsla(11, 100%, 64%, 0.795);
 
     --font-destaque: 'Boldonse', sans-serif;
     --font-padrao: 'Inter', sans-serif;
 }
 
-body{    
-    padding-bottom: 10px;
+html, body{    
+    padding: 0px;
     margin: 0px;  
 }
 
 header {
-    max-width: 100%;
-    height: 20vh;
+    max-width: 100vw;
+    height: 50px;
     border: 3px solid orange;
     border-top-width: 0px;
     border-right-width: 0px;
     border-left-width: 0px;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 130px;
 }
 
 div{
@@ -118,23 +121,25 @@ footer{
     color: white;
     text-shadow: 1px 1px 1px black;
     font-family: var(--font-padrao);
-    font-weight: bold;
-    font-size: medium;
     max-height: 100vh;
     border: 2px solid orange;
     max-width: 1100px ;
-    max-width: 1100px ;
     margin: auto;
     border-radius: 5px;
+    font-variant: small-caps;
+    font-weight: normal;
+    text-align: center;
 }
 
 footer a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
+    
 }
 
 footer a:hover{
     color: #c800bb;
     text-decoration: underline;
+    
 }
