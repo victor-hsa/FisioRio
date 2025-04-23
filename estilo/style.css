@@ -44,8 +44,8 @@ html, body{
 header {
     font-size: clamp(1.2rem, 1.7vw, 2rem);
     background-color: var(--cor4);
-    max-width: 90vw;
-    max-height: 12vh;
+    max-width: 95vw;
+    max-height: 10vh;
     border: 2px solid orange;
     border-top-width: 0px;
     text-align: right;
@@ -55,8 +55,8 @@ header {
 picture.logo{
     float: left;
     position: absolute;
-    top: 0vh;
-    left: 5vw;    
+    top: 1vh;
+    left: 3vw;    
  }
 
 div{
@@ -86,7 +86,7 @@ div nav a:hover{
 
 main{
     background-color: var(--cor1);
-    max-width: 90vw;
+    max-width: 95vw;
     margin: auto;
     border-left: 2px solid orange;
     border-right: 2px solid orange;
@@ -97,8 +97,8 @@ main{
 }
 
 article{
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
 }
 img{
    max-width: 100%;
