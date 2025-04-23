@@ -59,9 +59,7 @@ picture.logo{
  }
 
 div{
-    background-size: 40vh;
-    height: 20vh;
-    
+    padding-top: 10vh;
 }
 
 div nav a{
