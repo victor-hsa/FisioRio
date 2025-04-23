@@ -15,11 +15,13 @@
     text-indent: 10px;
     font-weight: normal;
     color: var(--cor1);
+    font-size: clamp(1.2rem, 1.7vw, 2rem);
 }
 
-* p{
+* p, li{
     padding-left: 10px;
     text-align: justify;
+    font-size: clamp(.7rem, 1.7vw, 2rem);
 }
 
 :root{
@@ -40,15 +42,22 @@ html, body{
 }
 
 header {
+    font-size: clamp(1.2rem, 1.7vw, 2rem);
     background-color: var(--cor4);
     max-width: 90vw;
-    max-height: 10vh;
+    max-height: 12vh;
     border: 2px solid orange;
     border-top-width: 0px;
     text-align: right;
     padding-top: 5vh;
     margin: auto;
 }
+picture.logo{
+    float: left;
+    position: absolute;
+    top: 0vh;
+    left: 5vw;    
+ }
 
 div{
     background-size: 40vh;
@@ -67,12 +76,12 @@ div nav a{
 
 div nav a:hover{
     background-color: var(--cor5);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     color: var(--cor0);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     border-radius: 5px;
     padding: 0px 5px 0px 5px;
-    border: 2px solid var(--cor0);
+    border: 1px solid var(--cor0);
 }
 
 main{
@@ -86,10 +95,15 @@ main{
     margin-bottom: 10px;
     
 }
-picture{
-   background: black url(../fisioterapia/fisioterapia-720.jpg) center center no-repeat fixed;
-   background-size: cover;
-   max-width: 720px;
+
+article{
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+img{
+   max-width: 100%;
+   max-height: auto;
+   object-fit: cover;
 }
 
 main p{
