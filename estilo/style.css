@@ -42,14 +42,15 @@ html, body{
 }
 
 header {
-    font-size: clamp(1.2rem, 1.7vw, 2rem);
+    box-sizing: border-box;
     background-color: var(--cor4);
     max-width: 95vw;
-    max-height: 100px;
+    max-height: 30vh;
     border: 2px solid orange;
     border-top-width: 0px;
     text-align: right;
     margin: auto;
+    padding-bottom: 2vh;
 }
 picture.logo{
     float: left;
@@ -64,11 +65,12 @@ div{
 
 div nav a{
     font-family: var(--font-destaque);
-    font-size: smaller;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
     text-decoration: none;
     color: var(--cor2);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
-    padding: 0px 5px 0px 5px;    
+    padding: 0px 5px 0px 5px;
+      
 }
 
 div nav a:hover{
@@ -82,6 +84,7 @@ div nav a:hover{
 }
 
 main{
+    box-sizing: border-box;
     background-color: var(--cor1);
     max-width: 95vw;
     margin: auto;
@@ -93,9 +96,10 @@ main{
     
 }
 
-article{
+article > p{
     padding-right: 2vw;
     padding-left: 2vw;
+    text-align: justify;
 }
 img{
    max-width: 100%;
@@ -117,14 +121,15 @@ main ul{
 }
 
 footer{
+    box-sizing: border-box;
     font-family: var(--font-padrao);
     background: var(--cor2);
     color: white;
     text-shadow: 1px 1px 1px black;
     font-family: var(--font-padrao);
-    max-height: 100vh;
+    
     border: 2px solid orange;
-    max-width: 90vw ;
+    max-width: 95vw;
     margin: auto;
     border-radius: 5px;
     font-variant: small-caps;
