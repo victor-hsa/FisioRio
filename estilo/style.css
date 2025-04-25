@@ -45,8 +45,8 @@ header {
     border-bottom: 2px solid orangered;
     border-top-width: 0px;
     text-align: right;    
-    padding-right: clamp(100px, 100vw, 300px );
-    padding-bottom: 1%;
+    padding-right: 20vw;
+    padding-bottom: 1vh;
     position: sticky;
     top: 0;
 }
@@ -60,9 +60,8 @@ div > picture.logo > a{
     border: 1px solid var(--cor5);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
     object-fit: contain;
-    max-width: 60vw;
-    max-height: 60vh;
-    margin: 0.5%;
+    display: flex;
+    flex-direction: row;
  }
 
 div{
