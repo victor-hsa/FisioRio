@@ -18,7 +18,7 @@
     font-size: clamp(1.2rem, 1.7vw, 2rem);
 }
 
-* p, li{
+*p, li{
     padding-left: 10px;
     text-align: justify;
     font-size: clamp(1rem, 1.7vw, 2rem);
@@ -51,6 +51,8 @@ header {
     text-align: right;
     margin: auto;
     padding-bottom: 2vh;
+    position: sticky;
+    top: 0;
 }
 picture.logo{
     float: left;
@@ -70,7 +72,7 @@ div nav a{
     color: var(--cor2);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     padding: 0px 5px 0px 5px;
-      
+    position: relative;
 }
 
 div nav a:hover{
@@ -94,6 +96,10 @@ main{
     border-radius: 0px 0px 5px 5px;
     margin-bottom: 5px;
     
+}
+
+article{
+    padding: 0.5%;
 }
 
 article > p{
