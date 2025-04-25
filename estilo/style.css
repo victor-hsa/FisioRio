@@ -12,16 +12,14 @@
     margin: 0px;
     font-family: var(--font-destaque);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    text-indent: 10px;
     font-weight: normal;
     color: var(--cor1);
-    font-size: clamp(1.2rem, 1.7vw, 2rem);
+    font-size: clamp(1em, 2vw, 1.3em);
 }
 
 *p, li{
-    padding-left: 10px;
     text-align: justify;
-    font-size: clamp(1rem, 1.7vw, 2rem);
+    font-size: clamp(0.9em, 2vw, 1.3em);
 }
 
 :root{
@@ -42,78 +40,68 @@ html, body{
 }
 
 header {
-    box-sizing: border-box;
     background-color: var(--cor4);
-    max-width: 95vw;
-    max-height: 30vh;
-    border: 2px solid orange;
+    max-height: 30%;
+    border-bottom: 2px solid orangered;
     border-top-width: 0px;
-    text-align: right;
-    margin: auto;
-    padding-bottom: 3vh;
+    text-align: right;    
+    padding-right: clamp(100px, 100vw, 300px );
+    padding-bottom: 1%;
     position: sticky;
     top: 0;
 }
-div > picture.logo > a > img{
+div > picture.logo > a{
     float: left;
     position: absolute;
-    top: 0.5vh;
-    left: 2vw;
+    top: 0;
+    left: 20vw;
     background-color: white;
     border-radius: 10px;  
-    padding: 0.01%;
-    border: 1px solid black;
+    border: 1px solid var(--cor5);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
-    object-fit: scale-down;
+    object-fit: contain;
+    max-width: 60vw;
+    max-height: 60vh;
+    margin: 0.5%;
  }
 
 div{
     padding-top: 10vh;
+    
 }
 
 nav a{
     font-family: var(--font-destaque);
-    font-size: clamp(0.9em, 2vw, 1.3em);
+    font-size: clamp(0.80em, 0.98vw, 1em);
     text-decoration: none;
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0); 
-    padding: 0px 5px 0px 5px;
     position: relative;
     margin: .5%;
+    padding: 3px;
 }
 
 nav a:hover{
     background-color: var(--cor5);
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     color: var(--cor0);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     border-radius: 5px;
-    padding: 0px 5px 0px 5px;
     border: 1px solid var(--cor0);
+    padding: 3px;
 }
 
 main{
-    box-sizing: border-box;
     background-color: var(--cor1);
-    max-width: 95vw;
-    margin: auto;
-    border-left: 2px solid orange;
-    border-right: 2px solid orange;
-    border-bottom: 2px solid orange;
-    border-radius: 0px 0px 5px 5px;
-    margin-bottom: 5px;
-    
-}
-
-article{
-    padding: 0.5%;
+    border-bottom: 2px solid orange;  
+    padding-right: 20%;
+    padding-left: 20%; 
 }
 
 article > p{
-    padding-right: 2vw;
-    padding-left: 2vw;
     text-align: justify;
 }
+
 picture > img{
    max-width: 100%;
    max-height: 100%;
@@ -124,29 +112,25 @@ picture > img{
 
 main p{
     font-family: var(--font-padrao);
-    text-align: left;
-    text-indent: 20px;
+    text-align: justify;
     font-weight: normal;
     line-height: 1.5em;
 }
 
 main ul{
     font-family: var(--font-padrao);
-    text-align: left;
+    text-align: justify;
 }
 
 footer{
-    box-sizing: border-box;
+    
     font-family: var(--font-padrao);
     background: var(--cor2);
     color: white;
     text-shadow: 1px 1px 1px black;
     font-family: var(--font-padrao);
     padding-left: 1%;
-    border: 2px solid orange;
-    max-width: 95vw;
-    margin: auto;
-    border-radius: 5px;
+    border: 2px solid orangered;
     font-variant: small-caps;
     font-weight: normal;
     }
