@@ -64,25 +64,25 @@ div > picture.logo > a > img{
     padding: 0.01%;
     border: 1px solid black;
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
-    object-fit: contain;
+    object-fit: scale-down;
  }
 
 div{
     padding-top: 10vh;
 }
 
-div nav a{
+nav a{
     font-family: var(--font-destaque);
     font-size: clamp(0.9em, 2vw, 1.3em);
     text-decoration: none;
     color: var(--cor2);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0); 
+    text-shadow: 1px 1px 2px rgb(0, 0, 0); 
     padding: 0px 5px 0px 5px;
     position: relative;
     margin: .5%;
 }
 
-div nav a:hover{
+nav a:hover{
     background-color: var(--cor5);
     transition-duration: 0.2s;
     color: var(--cor0);
