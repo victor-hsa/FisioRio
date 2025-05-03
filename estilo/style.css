@@ -137,13 +137,11 @@ footer{
         border: 1px solid var(--cor1);
         box-sizing: border-box;
     
-        width: 30px;
+        width: 40px;
         border-radius: 50%;
      }
     
     nav.social img:hover{
         border: 2px solid var(--cor0);
         box-shadow: 2px solid var(--cor0);
-    
-        transition: translate(-5px, -5px);
      }
