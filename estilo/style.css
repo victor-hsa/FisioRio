@@ -41,35 +41,32 @@ html, body{
 
 header {
     background-color: var(--cor4);
-    max-height: 30%;
+    max-height: 30vh;
     border-bottom: 2px solid orangered;
     border-top-width: 0px;
-    text-align: right;    
+    text-align: right;
     padding-right: 20vw;
     padding-bottom: 1vh;
-    position: sticky;
-    top: 0;
 }
-div > picture.logo > a{
+
+
+picture.logo{
     float: left;
     position: absolute;
+    display: block;
     top: 0;
     left: 20vw;
     background-color: white;
     border-radius: 10px;  
-    border: 1px solid var(--cor5);
+    border: 2px solid var(--cor2);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
-    object-fit: contain;
-    display: flex;
-    flex-direction: row;
  }
 
 div{
-    padding-top: 10vh;
-    
+    height: 17vh;    
 }
 
-nav a{
+nav.menu a{
     font-family: var(--font-destaque);
     font-size: clamp(0.80em, 0.98vw, 1em);
     text-decoration: none;
@@ -78,9 +75,10 @@ nav a{
     position: relative;
     margin: .5%;
     padding: 3px;
+    box-sizing: border-box;
 }
 
-nav a:hover{
+nav.menu a:hover{
     background-color: var(--cor5);
     transition-duration: 0.3s;
     color: var(--cor0);
@@ -90,6 +88,8 @@ nav a:hover{
     padding: 3px;
 }
 
+
+
 main{
     background-color: var(--cor1);
     border-bottom: 2px solid orange;  
@@ -97,16 +97,13 @@ main{
     padding-left: 20%; 
 }
 
-article > p{
-    text-align: justify;
+article picture.fisiorio img{
+    box-shadow: 1px 1px 3px black;
+    width: 100%;
 }
 
-picture > img{
-   max-width: 100%;
-   max-height: 100%;
-   object-fit: cover;
-   border: 1px solid black;
-   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
+article > p{
+    text-align: justify;
 }
 
 main p{
@@ -124,6 +121,8 @@ main ul{
 footer{
     
     font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: large;
     background: var(--cor2);
     color: white;
     text-shadow: 1px 1px 1px black;
@@ -134,15 +133,17 @@ footer{
     font-weight: normal;
     }
 
-footer a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
+    nav.social img{
+        border: 1px solid var(--cor1);
+        box-sizing: border-box;
     
-}
-
-footer a:hover{
-    color: #c800bb;
-    text-decoration: underline;
+        width: 30px;
+        border-radius: 50%;
+     }
     
-}
+    nav.social img:hover{
+        border: 2px solid var(--cor0);
+        box-shadow: 2px solid var(--cor0);
+    
+        transition: translate(-5px, -5px);
+     }
