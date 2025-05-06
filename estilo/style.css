@@ -14,18 +14,23 @@
        }
 }
 
-* h1, h2, h3{
-    margin: 0px;
+* h1, h2, h3{   
     font-family: var(--font-destaque);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-weight: normal;
+    text-align: justify;
     color: var(--cor1);
-    font-size: clamp(1em, 2vw, 1.3em);
+    font-size: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
-*p, li{
+* article p, li{
+    font-family: var(--font-padrao);
     text-align: justify;
-    font-size: clamp(0.9em, 2vw, 1.3em);
+    font-size: 1rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
 :root{
@@ -47,12 +52,11 @@ html, body{
 
 header {
     background-color: var(--cor4);
-    max-height: 30vh;
+    min-height: 110px;
     border-bottom: 2px solid orangered;
     border-top-width: 0px;
     text-align: right;
-    padding-right: 20vw;
-    padding-bottom: 1vh;
+    min-width: 100vw;
 }
 
 
@@ -67,20 +71,14 @@ picture.logo{
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
  }
 
-div{
-    height: 17vh;    
-}
-
 nav.menu a{
     font-family: var(--font-destaque);
-    font-size: clamp(0.80em, 0.98vw, 1em);
+    font-size: 1em;
     text-decoration: none;
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0); 
-    position: relative;
-    margin: .5%;
-    padding: 3px;
-    box-sizing: border-box;
+    margin: 5px;
+    width: 20vw;
 }
 
 nav.menu a:hover{
@@ -98,40 +96,24 @@ nav.menu a:hover{
 main{
     background-color: var(--cor1);
     border-bottom: 2px solid orange;  
-    padding-right: 15%;
-    padding-left: 15%; 
+    padding: 10px;
 }
 
 article picture.fisiorio img{
     box-shadow: 1px 1px 3px black;
-    width: 100%;
-}
-
-article > p{
-    text-align: justify;
-}
-
-main p{
-    font-family: var(--font-padrao);
-    text-align: justify;
-    font-weight: normal;
-    line-height: 1.5em;
-}
-
-main ul{
-    font-family: var(--font-padrao);
-    text-align: justify;
+    max-width: 75%;
+    margin: auto;
+    display: block;
 }
 
 footer{
-    
     font-family: var(--font-padrao);
     font-weight: bold;
     font-size: large;
-    background: var(--cor2);
+    background-color: var(--cor2);
     color: white;
     text-shadow: 1px 1px 1px black;
-    font-family: var(--font-padrao);
+    text-align: left;
     padding-left: 1%;
     border: 2px solid orangered;
     font-variant: small-caps;
