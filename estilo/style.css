@@ -8,29 +8,27 @@
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=M+PLUS+Rounded+1c&family=Rye&display=swap') format('opentype');
 }
 
-@media (min-width: 569px){
-    main {
-        padding: 0px;
-       }
-}
-
 * h1, h2, h3{   
     font-family: var(--font-destaque);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-weight: normal;
-    text-align: justify;
+    text-align: left;
     color: var(--cor1);
-    font-size: 1.5rem;
     max-width: 1000px;
     margin: auto;
 }
+* p{
+    margin: 0px;
+    font-size: .9em;
+}
 
-* article p, li{
+* article, aside{
     font-family: var(--font-padrao);
     text-align: justify;
-    font-size: 1rem;
     max-width: 1000px;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 :root{
@@ -55,53 +53,60 @@ header {
     min-height: 110px;
     border-bottom: 2px solid orangered;
     border-top-width: 0px;
-    text-align: right;
-    min-width: 100vw;
 }
 
 
-picture.logo{
+picture.logo img{
     float: left;
     position: absolute;
-    top: 0vh;
-    left: 15vw;
+    top: 2px;
+    left: 13vw;
     background-color: white;
     border-radius: 10px;  
     border: 2px solid var(--cor2);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
+    max-width: 80vw;
+    max-height: 80vh;
+    
  }
 
 nav.menu a{
     font-family: var(--font-destaque);
-    font-size: 1em;
     text-decoration: none;
+    font-size: clamp (0.8em, 3vw, 1em);
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0); 
     margin: 5px;
-    width: 20vw;
+    display: inline-block;
+    position: relative;
+
+    top: 70px;
+    left: 21vw;
 }
 
 nav.menu a:hover{
     background-color: var(--cor5);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     color: var(--cor0);
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     border-radius: 5px;
     border: 1px solid var(--cor0);
-    padding: 3px;
+    margin: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 
 
 main{
     background-color: var(--cor1);
-    border-bottom: 2px solid orange;  
-    padding: 10px;
+    border-bottom: 2px solid orange;
+    text-align: justify;
 }
 
-article picture.fisiorio img{
+aside picture.fisiorio img{
     box-shadow: 1px 1px 3px black;
-    max-width: 75%;
+    max-width: 100%;
     margin: auto;
     display: block;
 }
@@ -109,23 +114,24 @@ article picture.fisiorio img{
 footer{
     font-family: var(--font-padrao);
     font-weight: bold;
-    font-size: large;
     background-color: var(--cor2);
     color: white;
     text-shadow: 1px 1px 1px black;
     text-align: left;
-    padding-left: 1%;
-    border: 2px solid orangered;
-    font-variant: small-caps;
-    font-weight: normal;
+    margin: 0px;
     }
+footer p{
+    padding: 5px;
+}
 
     nav.social img{
         border: 1px solid var(--cor1);
         box-sizing: border-box;
-    
-        width: 40px;
-        border-radius: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 35px;
+        border-radius: 25%;
+        margin-left: 10px;
      }
     
     nav.social img:hover{
