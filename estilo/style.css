@@ -8,6 +8,19 @@
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=M+PLUS+Rounded+1c&family=Rye&display=swap') format('opentype');
 }
 
+@media (max-width: 800px){
+    nav.menu a{ 
+        font-size: 0.7em;
+        text-align: right;
+    }
+    h1, h2, h3{ 
+        font-size: 1em;
+    }
+    article, aside, li{
+        font-size: .9em;
+    }
+}
+
 * h1, h2, h3{   
     font-family: var(--font-destaque);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
@@ -15,11 +28,13 @@
     text-align: left;
     color: var(--cor1);
     max-width: 1000px;
+    padding: 0px 0px 10px 0px;
     margin: auto;
 }
 * p{
     margin: 0px;
     font-size: .9em;
+    padding: 0px 0px 10px 0px;
 }
 
 * article, aside{
@@ -73,15 +88,13 @@ picture.logo img{
 nav.menu a{
     font-family: var(--font-destaque);
     text-decoration: none;
-    font-size: clamp (0.8em, 3vw, 1em);
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0); 
     margin: 5px;
-    display: inline-block;
     position: relative;
 
     top: 70px;
-    left: 21vw;
+    left: 25vw;
 }
 
 nav.menu a:hover{
