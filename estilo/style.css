@@ -14,14 +14,14 @@
     }
     h1, h2, h3{ 
         font-size: 1.1em;
-        text-align: justify;
+        
     }
     article, aside, li{
         font-size: .9em;
     }
     picture.logo img{
         width: 80px;
-        object-position: top;
+        
     }
     
     header{
