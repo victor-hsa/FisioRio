@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+nav.menu a{
+    position: relative;
+
+    top: 80px;
+    left: 30vw;
+    font-size: .9em;
+}    
+

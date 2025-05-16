@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 * h1, h2, h3{   
     font-size: 1em;
 } 
@@ -17,15 +18,15 @@ nav.menu a{
     position: relative;
 
     top: 80px;
-    left: 20vh;
-    font-size: .9em;
+    left: 0px;
+    font-size: .7em;
 }    
 
 picture.logo img{
     position: absolute;
     top: 2px;
-    left: 2vw;
+    left: 1vw;
 
-    max-width: 20vw;
-    max-height: 20vh; 
+    max-width: 23%;
 }
+
