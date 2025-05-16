@@ -80,8 +80,8 @@ nav.menu a{
     margin: 5px;
     position: relative;
 
-    top: 10vh;
-    left: 30vw;
+    top: 80px;
+    left: 750px;
 }
 
 nav.menu a:hover{
