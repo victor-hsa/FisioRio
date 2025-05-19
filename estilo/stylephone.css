@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px){
+    nav.menu a{
+        font-size: .8em;
+        position: relative;
+        top: 87px;
+        left: 0px;
+        display: inline;
+    }
+
+    picture.logo img{
+        width: 80px;
+
+        position: absolute;
+
+        left: 5px;
+    }
+}

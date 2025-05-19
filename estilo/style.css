@@ -8,7 +8,6 @@
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=M+PLUS+Rounded+1c&family=Rye&display=swap') format('opentype');
 }
 
-
 * h1, h2, h3{   
     font-family: var(--font-destaque);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
@@ -81,7 +80,7 @@ nav.menu a{
     position: relative;
 
     top: 80px;
-    left: 750px;
+    left: 10vw;
 }
 
 nav.menu a:hover{
