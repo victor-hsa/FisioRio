@@ -61,7 +61,7 @@ header {
 
 picture.logo img{
     position: absolute;
-    top: 2px;
+    top: 5px;
     left: 13vw;
     background-color: white;
     border-radius: 10px;  
@@ -71,7 +71,15 @@ picture.logo img{
     max-height: 80vh;    
  }
 
-nav.menu a{
+ picture.logo img:hover{
+    border: 2px solid var(--cor0);
+ }
+
+span#burguer{
+    color: var(--cor4);
+ }
+
+menu#itens > a{
     font-family: var(--font-destaque);
     text-decoration: none;
     color: var(--cor2);
@@ -79,11 +87,11 @@ nav.menu a{
     margin: 5px;
     position: relative;
 
-    top: 80px;
+    top: 40px;
     
 }
 
-nav.menu a:hover{
+menu#itens > a:hover{
     background-color: var(--cor5);
     transition-duration: 0.2s;
     color: var(--cor0);
@@ -123,7 +131,7 @@ footer p{
     padding: 5px;
 }
 
-nav.social img{
+nav#social img{
         border: 1px solid var(--cor1);
         box-sizing: border-box;
         margin-top: 10px;
@@ -133,7 +141,7 @@ nav.social img{
         margin-left: 10px;
      }
     
-nav.social img:hover{
+nav#social img:hover{
         border: 2px solid var(--cor0);
         box-shadow: 2px solid var(--cor0);
      }

@@ -4,25 +4,37 @@
     * h1, h2, h3{
         font-size: 1.2em;
     }
-    nav.menu a{
+    menu#itens a{
         font-size: .8em;
         position: relative;
-        top: 90px;
+        top: 45px;
         left: 5vw;
 
-        display: inline;
+        display: none;
     }
 
     picture.logo img{
-        width: 80px;
-
         position: absolute;
-        left: 10vw;
+
+        top: 5px;
+        left: 1vw;
+    }
+    span#burguer{
+        position: relative;
+
+        top: 90px;
+        left: 90%;
+
+        color: #F2441D;
+    }
+    span#burguer:hover{
+        color: #7A38A6;
+        cursor: pointer;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    nav.menu a{
+    menu#itens a{
         position: relative;
 
         left: 45vw;
@@ -34,7 +46,7 @@
 }
 
 @media screen and (min-width: 1024px){
-    nav.menu a{
+    menu#itens a{
         position: relative;
 
         left: 50vw;
