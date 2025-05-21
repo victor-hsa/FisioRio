@@ -59,7 +59,7 @@ header {
 }
 
 
-picture.logo img{
+#logo img{
     position: absolute;
     top: 5px;
     left: 13vw;
@@ -71,9 +71,9 @@ picture.logo img{
     max-height: 80vh;    
  }
 
- picture.logo img:hover{
+#logo img:hover{
     border: 2px solid var(--cor0);
- }
+}
 
 span#burguer{
     color: var(--cor4);

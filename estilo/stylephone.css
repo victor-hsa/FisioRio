@@ -6,14 +6,14 @@
     }
     menu#itens a{
         font-size: .8em;
-        position: relative;
+        position: absolute;
         top: 45px;
         left: 5vw;
 
         display: none;
     }
 
-    picture.logo img{
+    #logo img{
         position: absolute;
 
         top: 5px;
