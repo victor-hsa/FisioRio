@@ -4,51 +4,45 @@
     * h1, h2, h3{
         font-size: 1.2em;
     }
-    menu#itens a{
-        font-size: .8em;
-        position: absolute;
-        top: 45px;
-        left: 5vw;
-
-        display: none;
-    }
-
-    #logo img{
-        position: absolute;
-
-        top: 5px;
-        left: 1vw;
-    }
-    span#burguer{
+    picture#logo > a > img{
         position: relative;
-
-        top: 90px;
-        left: 90%;
-
-        color: #F2441D;
+        left: 0px;
     }
-    span#burguer:hover{
-        color: #7A38A6;
-        cursor: pointer;
-    }
+    menu#itens > a{
+        position: relative;
+        left: -2vw;
+        }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    menu#itens a{
+    menu#itens > a{
         position: relative;
-
-        left: 45vw;
-    }
+        left: 25vw;
+        }
     article, aside{
         margin: auto;
-        max-width: 85vw;
+        max-width: 768px;
+    }
+
+    picture#logo > a > img{
+        position: relative;
+        left: 10vw;
     }
 }
 
 @media screen and (min-width: 1024px){
-    menu#itens a{
+    menu#itens > a{
         position: relative;
+        left: 43vw;        
+    }
 
-        left: 50vw;
+    picture#logo > a > img{
+        position: relative;
+        left: 15vw;
+    }
+
+    article, aside{
+        margin: auto;
+        max-width: 1024px;
     }
 }

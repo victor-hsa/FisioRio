@@ -28,7 +28,6 @@
 * article, aside{
     font-family: var(--font-padrao);
     text-align: justify;
-    max-width: 1000px;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -56,28 +55,28 @@ header {
     height: 115px;
     border-bottom: 2px solid orangered;
     border-top-width: 0px;
+    
 }
 
-
-#logo img{
+div { 
+    display: flex;
     position: absolute;
+
     top: 5px;
-    left: 13vw;
+}
+
+picture#logo > a > img{
     background-color: white;
     border-radius: 10px;  
     border: 2px solid var(--cor2);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
     max-width: 80vw;
-    max-height: 80vh;    
+    max-height: 80vh;   
  }
 
-#logo img:hover{
+picture#logo img:hover {
     border: 2px solid var(--cor0);
 }
-
-span#burguer{
-    color: var(--cor4);
- }
 
 menu#itens > a{
     font-family: var(--font-destaque);
@@ -85,10 +84,12 @@ menu#itens > a{
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0); 
     margin: 5px;
+
     position: relative;
 
-    top: 40px;
-    
+    left: 400px;
+    top: 5vh;
+    flex: auto;    
 }
 
 menu#itens > a:hover{
