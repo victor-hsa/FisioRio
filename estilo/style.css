@@ -14,23 +14,23 @@
     font-weight: normal;
     text-align: left;
     color: var(--cor1);
-    max-width: 1000px;
     padding: 0px 0px 10px 0px;
     margin: auto;
 } 
 
 * p{
     margin: 0px;
-    font-size: .9em;
-    padding: 0px 0px 10px 0px;
+    font-size: 1em;
+    padding: 5px 10px ;
 }
 
 * article, aside{
     font-family: var(--font-padrao);
     text-align: justify;
     margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 992px;
+    font-size: .9em;
+    padding: 0px 10px ;
 }
 
 :root{
@@ -47,52 +47,69 @@
 
 html, body{    
     padding: 0px;
-    margin: 0px;  
+    margin: 0px;
+    width: 100%;  
 }
 
 header {
     background-color: var(--cor4);
     height: 115px;
+    width: 100%;
     border-bottom: 2px solid orangered;
     border-top-width: 0px;
-       
+    display: inline-flex;
 }
 
-div { 
-    display: flex;
-    position: absolute;
-
-    top: 5px;
+div#logo{
+    
+    height: 115px;
+    
+    flex-flow: row nowrap;
+    
+    align-content: space-evenly;
+    padding: 0% 10%;
+    
 }
 
-picture#logo > a > img{
+div#logo > picture > a > img{
     background-color: white;
     border-radius: 10px;  
     border: 2px solid var(--cor2);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
     max-width: 80vw;
-    max-height: 80vh;   
+    max-height: 80vh;
+           
  }
 
-picture#logo img:hover {
+picture > a > img{
+    
+ }
+
+div#logo > picture > a > img:hover {
     border: 2px solid var(--cor0);
 }
 
-menu#itens > a{
+div#itens{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end; 
+    padding-top: 25px;
+    padding-right: 25px;
+    width: 80vw;
+    
+}
+
+div#itens > menu > a{
     font-family: var(--font-destaque);
     text-decoration: none;
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0); 
     margin: 5px;
 
-    position: relative;
-
-    left: 400px;
-    top: 1vh;
-    flex: auto;    
+    
 }
 
-menu#itens > a:hover{
+div#itens > menu > a:hover{
     background-color: var(--cor5);
     transition-duration: 0.2s;
     color: var(--cor0);
@@ -104,15 +121,13 @@ menu#itens > a:hover{
     padding-right: 3px;
 }
 
-
-
 main{
     background-color: var(--cor1);
     border-bottom: 2px solid orange;
     text-align: justify;
 }
 
-aside picture.fisiorio img{
+div#fisiorio > picture > img{
     box-shadow: 1px 1px 3px black;
     max-width: 100%;
     margin: auto;
