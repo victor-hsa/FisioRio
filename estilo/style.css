@@ -35,7 +35,7 @@
 
 :root{
     --cor0: #7A38A6;
-    --cor1: hsla(277, 100%, 84%, 0.603);
+    --cor1: hsla(277, 100%, 84%, 0.486);
     --cor2: #F2441D;
     --cor3: hsla(11, 95%, 62%, 0.712);
     --cor4: hsl(239, 100%, 76%);
@@ -62,12 +62,11 @@ header {
 
 div#logo{
     
-    height: 115px;
-    
+    height: 115px;    
     flex-flow: row nowrap;
     
     align-content: space-evenly;
-    padding: 0% 10%;
+    padding: 0% 15%;
     
 }
 
@@ -91,11 +90,11 @@ div#logo > picture > a > img:hover {
 
 div#itens{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-end; 
     padding-top: 25px;
     padding-right: 25px;
-    width: 80vw;
+    width: 50vw;
     
 }
 
@@ -105,8 +104,6 @@ div#itens > menu > a{
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0); 
     margin: 5px;
-
-    
 }
 
 div#itens > menu > a:hover{
