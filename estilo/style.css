@@ -24,9 +24,8 @@
 } 
 
 * p{
-    margin: 0px;
     font-size: 1em;
-    padding: 5px 10px ;
+    padding: 3px 10px;
 }
 
 * article, aside{
@@ -66,9 +65,7 @@ header {
 }
 
 div#logo{
-    box-sizing: border-box;
-
-    
+    box-sizing: border-box;    
     flex: 0 0 130px;
 }
 
@@ -76,7 +73,7 @@ div#logo > picture > a > img{
     background-color: white;
     border-radius: 10px;  
     border: 2px solid var(--cor2);
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
     
  }
 
@@ -130,6 +127,10 @@ div#fisiorio > picture > img{
     box-shadow: 1px 1px 3px black;
     max-width: 100%;
     margin: auto;
+}
+
+li{ 
+    margin: 5px 25px;
 }
 
 footer{
