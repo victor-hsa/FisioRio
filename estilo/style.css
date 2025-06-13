@@ -8,14 +8,19 @@
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=M+PLUS+Rounded+1c&family=Rye&display=swap') format('opentype');
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 * h1, h2, h3{   
     font-family: var(--font-destaque);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-weight: normal;
-    text-align: left;
     color: var(--cor1);
-    padding: 0px 0px 10px 0px;
-    margin: auto;
+    padding: 0px;
+    margin: 0px;
 } 
 
 * p{
@@ -30,7 +35,6 @@
     margin: auto;
     max-width: 992px;
     font-size: .9em;
-    padding: 0px 10px ;
 }
 
 :root{
@@ -48,26 +52,25 @@
 html, body{    
     padding: 0px;
     margin: 0px;
-    width: 100%;  
+    box-sizing: border-box;  
 }
 
 header {
     background-color: var(--cor4);
-    height: 115px;
-    width: 100%;
     border-bottom: 2px solid orangered;
-    border-top-width: 0px;
-    display: inline-flex;
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 div#logo{
+    border: 1px dotted black;    
+    box-sizing: border-box;
+
     
-    height: 115px;    
-    flex-flow: row nowrap;
-    
-    align-content: space-evenly;
-    padding: 0% 15%;
-    
+    flex: 0 0 130px;
 }
 
 div#logo > picture > a > img{
@@ -75,9 +78,7 @@ div#logo > picture > a > img{
     border-radius: 10px;  
     border: 2px solid var(--cor2);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
-    max-width: 80vw;
-    max-height: 80vh;
-           
+    
  }
 
 picture > a > img{
@@ -89,21 +90,20 @@ div#logo > picture > a > img:hover {
 }
 
 div#itens{
+    border: 1px dotted black;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; 
-    padding-top: 25px;
-    padding-right: 25px;
-    width: 50vw;
     
+    flex-flow: row wrap;
+    flex-basis: auto;
 }
 
 div#itens > menu > a{
     font-family: var(--font-destaque);
     text-decoration: none;
     color: var(--cor2);
-    text-shadow: 1px 1px 2px rgb(0, 0, 0); 
-    margin: 5px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin: 0px 10px;    
+       
 }
 
 div#itens > menu > a:hover{
@@ -113,9 +113,13 @@ div#itens > menu > a:hover{
     text-shadow: 1px 1px 1px rgb(0, 0, 0); 
     border-radius: 5px;
     border: 1px solid var(--cor0);
-    margin: 5px;
-    padding-left: 3px;
-    padding-right: 3px;
+    margin: 1px 8px;
+    padding: 0px 3px;
+}
+
+menu{
+    margin: 0px;
+    padding: 0px;
 }
 
 main{
@@ -128,7 +132,6 @@ div#fisiorio > picture > img{
     box-shadow: 1px 1px 3px black;
     max-width: 100%;
     margin: auto;
-    display: block;
 }
 
 footer{
@@ -137,16 +140,14 @@ footer{
     background-color: var(--cor2);
     color: white;
     text-shadow: 1px 1px 1px black;
-    text-align: left;
-    margin: 0px;
     }
+
 footer p{
-    padding: 5px;
+
 }
 
 nav#social img{
         border: 1px solid var(--cor1);
-        box-sizing: border-box;
         margin-top: 10px;
         margin-bottom: 10px;
         width: 35px;
