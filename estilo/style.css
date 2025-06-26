@@ -83,8 +83,8 @@ header {
 }
 
 div#logo{
-    box-sizing: border-box;    
-    flex: 0 0 130px;
+    box-sizing: border-box;
+    padding: 5px 0px;
 }
 
 div#logo > picture > a > img{
