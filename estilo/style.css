@@ -10,10 +10,10 @@
 
 @media screen and (max-width: 1010px) {
     header{
-        padding: 0px 20px;
+        padding: 0px 20px; 
     }
     #itens{
-    text-align: end;
+        text-align: center;
     }
     article, aside{
         padding: 0px 10px;
@@ -72,19 +72,21 @@ header {
     border-bottom: 2px solid orangered;
    
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template: 110px / 1fr 1fr 5fr 1fr;
     
-    align-items: center;
-    justify-items: center;
-
-    align-content: space-evenly;
-    justify-content: space-around;
+    
+    place-items: end end;    
+    place-content: space-between space-between;
 }
 
 div#logo{
     box-sizing: border-box;
-    padding: 5px 0px;
+    grid-area: 1/1/2/3;
+}
+
+div#itens{
+    grid-area: 1/3/2/4;
+    text-align: end;
 }
 
 div#logo > picture > a > img{
@@ -100,6 +102,7 @@ picture > a > img{
  }
 
 div#logo > picture > a > img:hover {
+
     border: 2px solid var(--cor0);
 }
 
@@ -108,8 +111,7 @@ div#itens > menu > a{
     text-decoration: none;
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    margin: 0px 5px;    
-       
+    margin: 0px 5px;       
 }
 
 div#itens > menu > a:hover{
@@ -137,7 +139,6 @@ main{
 div#fisiorio > picture > img{
     box-shadow: 1px 1px 3px black;
     max-width: 100%;
-    margin: auto;
 }
 
 li{ 
